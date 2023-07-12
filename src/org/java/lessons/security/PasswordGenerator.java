@@ -28,8 +28,6 @@ public class PasswordGenerator {
         int yearOfBirth;
         char dash = '-';
 
-
-
         //creation new object scanner
         Scanner input = new Scanner(System.in);
 
@@ -47,6 +45,7 @@ public class PasswordGenerator {
         System.out.println("Inserisci SOLO l'anno della tua nascita: ");
         yearOfBirth = input.nextInt();
 
+        //declaration variables whit operations
         String dateOfBirth = dayOfBirth + "/" + mounthOfBirth + "/" + yearOfBirth;
         int sumOfNumberOfBirth = dayOfBirth + mounthOfBirth + yearOfBirth;
         String insicurePassword = nameUser + dash + lastNameUser + dash + colorPreferite + dash + sumOfNumberOfBirth;
